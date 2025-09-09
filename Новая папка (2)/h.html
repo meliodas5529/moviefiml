@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieFinder</title>
+    <link rel="stylesheet" href="/c.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-film logo-icon"></i>
+                <h1>MovieFinder</h1>
+            </div>
+            <p class="tagline">Откройте для себя мир кино: находите, сохраняйте, наслаждайтесь</p>
+            
+            <div class="search-box">
+                <input type="text" placeholder="Введите название фильма...">
+                <button id="search-btn"><i class="fas fa-search"></i> Найти</button>
+            </div>
+            
+            <div class="categories">
+                <div class="category active">Все</div>
+                <div class="category">Новые</div>
+                <div class="category">Популярные</div>
+                <div class="category">Боевики</div>
+                <div class="category">Драмы</div>
+                <div class="category">Комедии</div>
+            </div>
+        </header>
+        <!--пстеры фильмов-->
+        <main>
+            <div class="movies-grid">
+                <div class="movie-card featured">
+                    <img src="https://i.pinimg.com/originals/14/9c/55/149c552a97819f1bd0d425d84915abb0.jpg" alt="Постер фильма" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">Время</h3>
+                        <div class="movie-meta">
+                            <span class="movie-year">2021</span>
+                            <span class="movie-rating"><i class="fas fa-star"></i> 8.5</span>
+                        </div>
+                        <p class="movie-description">В мире будущего время стало валютой, и люди могут покупать, продавать и обменивать его. Бедные умирают молодыми, а богатые живут вечно.</p>
+                        <div class="movie-actions">
+                            <button class="btn btn-details" data-movie="Время">Подробнее</button>
+                            <button class="btn btn-favorite" data-movie="Время">❤️<i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="movie-card">
+                    <img src="https://i.ytimg.com/vi/eVMqxD1nO9s/maxresdefault.jpg" alt="Постер фильма" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">Тёмный рыцарь</h3>
+                        <div class="movie-meta">
+                            <span class="movie-year">2008</span>
+                            <span class="movie-rating"><i class="fas fa-star"></i> 9.0</span>
+                        </div>
+                        <p class="movie-description">Бэтмен поднимает ставки в войне с преступностью. У него есть возможность раз и навсегда уничтожить зло, торжествующее в городе.</p>
+                        <div class="movie-actions">
+                            <button class="btn btn-details" data-movie="Тёмный рыцарь">Подробнее</button>
+                            <button class="btn btn-favorite" data-movie="Тёмный рыцарь">❤️<i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="movie-card">
+                    <img src="https://i.pinimg.com/originals/7e/3d/21/7e3d216c98d683d8c85ccf3557320421.jpg" alt="Постер фильма" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">Начало</h3>
+                        <div class="movie-meta">
+                            <span class="movie-year">2010</span>
+                            <span class="movie-rating"><i class="fas fa-star"></i> 8.8</span>
+                        </div>
+                        <p class="movie-description">Кобб – талантливый вор, лучший из лучших в опасном искусстве извлечения: он крадет ценные секреты из глубин подсознания во время сна.</p>
+                        <div class="movie-actions">
+                            <button class="btn btn-details" data-movie="Начало">Подробнее</button>
+                            <button class="btn btn-favorite" data-movie="Начало">❤️<i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <div class="movies-grid">
+                <div class="movie-card featured">
+                    <img src="http://kt.server-img.lfstrm.tv/image/aHR0cHM6Ly9rdC1pbWFnZXMuc2VydmVyLWNtcy5sZnN0cm0udHYvYXJjaGl2ZS1pbWcvbWVkaWEvMGYvMmYvMGYyZmM3MWJhNmViOWNkM2VlZWQ1ZGIzOTQ4YTllNTQ=" alt="Постер фильма" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">Дело Коллини</h3>
+                        <div class="movie-meta">
+                            <span class="movie-year">2019</span>
+                            <span class="movie-rating"><i class="fas fa-star"></i> 8.0</span>
+                        </div>
+                        <p class="movie-description"> разворачивается в Берлине в 2001 году. Пожилой промышленник Жан-Батист Мейер убит в номере отеля. В убийстве обвиняют итальянского механика Фабрицио Коллини, который сам сдаётся полиции.</p>
+                        <div class="movie-actions">
+                            <button class="btn btn-details" data-movie="Время">Подробнее</button>
+                            <button class="btn btn-favorite" data-movie="Время">❤️<i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="movie-card">
+                    <img src="http://images-s.kinorium.com/movie/poster/525889/w1500_50512789.jpg" alt="Постер фильма" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">Последний охотник на ведьм</h3>
+                        <div class="movie-meta">
+                            <span class="movie-year">2015</span>
+                            <span class="movie-rating"><i class="fas fa-star"></i>6.3</span>
+                        </div>
+                        <p class="movie-description">на протяжении многих веков охотники на ведьм сражались с этими злобными существами, защищая мир от «чёрной смерти» — смертоносной чумы. Только воину Колдеру удалось убить всемогущую Королеву ведьм.</p>
+                        <div class="movie-actions">
+                            <button class="btn btn-details" data-movie="Тёмный рыцарь">Подробнее</button>
+                            <button class="btn btn-favorite" data-movie="Тёмный рыцарь">❤️<i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="movie-card">
+                    <img src="https://i.ytimg.com/vi/KqNTRsNBzRQ/maxresdefault.jpg" alt="Постер фильма" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">Убить Билла</h3>
+                        <div class="movie-meta">
+                            <span class="movie-year">2010</span>
+                            <span class="movie-rating"><i class="fas fa-star"></i> 8.2</span>
+                        </div>
+                        <p class="movie-description">В беременную наёмную убийцу по кличке Чёрная Мамба во время бракосочетания стреляет человек по имени Билл. Но голова у женщины оказалась крепкой — пролежав четыре года в коме, бывшая невеста приходит в себя. Она горит желанием найти предателей.</p>
+                        <div class="movie-actions">
+                            <button class="btn btn-details" data-movie="Начало">Подробнее</button>
+                            <button class="btn btn-favorite" data-movie="Начало">❤️<i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <div class="movies-grid">
+                <div class="movie-card featured">
+                    <div class="featured-badge">Рекомендованно</div>
+                    <img src="https://avatars.mds.yandex.net/i?id=638e8def526e59f3492d99bbbf8d467d_l-7765566-images-thumbs&n=13" alt="Постер фильма" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">Поддельники</h3>
+                        <div class="movie-meta">
+                            <span class="movie-year">2021</span>
+                            <span class="movie-rating"><i class="fas fa-star"></i> 9.9</span>
+                        </div>
+                        <p class="movie-description">В истории о бессмысленности насилия Евгения Григорьева можно найти интересную вещь: чудо и ужас российской жизни растут из одного и того же корня. В пермском селе смешались в кучу революционные песни и медведь в жертвенной позе, колдовство противостоит винтовке, а местные мойры говорят на особенном, только им понятном языке.</p>
+                        <div class="movie-actions">
+                            <button class="btn btn-details" data-movie="Время">Подробнее</button>
+                            <button class="btn btn-favorite" data-movie="Время">❤️<i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="movie-card">
+                    <img src="https://chel.kassy.ru/media-cache/9b/9bcb8916312b70cb1f00aa779ca26a5f-30815.jpg" alt="Постер фильма" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">Керосин</h3>
+                        <div class="movie-meta">
+                            <span class="movie-year">2020</span>
+                            <span class="movie-rating"><i class="fas fa-star"></i> 9.0</span>
+                        </div>
+                        <p class="movie-description">Фильм — ода матерям. Лента расскажет о силе простых людей, способных выживать в самых трудных жизненных перипетиях.</p>
+                        <div class="movie-actions">
+                            <button class="btn btn-details" data-movie="Тёмный рыцарь">Подробнее</button>
+                            <button class="btn btn-favorite" data-movie="Тёмный рыцарь">❤️<i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="movie-card">
+                    <img src="https://static.mk.ru/upload/objects/articles/detailPicture/24/9b/58/6c8957942_9465904.jpg" alt="Постер фильма" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">Левиофан</h3>
+                        <div class="movie-meta">
+                            <span class="movie-year">2014</span>
+                            <span class="movie-rating"><i class="fas fa-star"></i> 7.5</span>
+                        </div>
+                        <p class="movie-description">Социальная драма, которая охватывает различные символы жизни и безопасности человека в «новой стране». Это история Николая, который вместе с отцом построил дом и мастерскую, но вскоре начал испытывать большие трудности в своей судьбе.</p>
+                        <div class="movie-actions">
+                            <button class="btn btn-details" data-movie="Начало">Подробнее</button>
+                            <button class="btn btn-favorite" data-movie="Начало">❤️<i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="movies-grid">
+                <div class="movie-card featured">
+                    <img src="https://img.ixbt.site/live/images/original/32/16/97/2024/11/13/2f99eb6af3.jpg" alt="Постер фильма" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">Чужой</h3>
+                        <div class="movie-meta">
+                            <span class="movie-year">1986</span>
+                            <span class="movie-rating"><i class="fas fa-star"></i> 9.5</span>
+                        </div>
+                        <p class="movie-description">Группа космических колонизаторов, исследуя заброшенную станцию, оказывается в логове древнего чудовища.</p>
+                        <div class="movie-actions">
+                            <button class="btn btn-details" data-movie="Время">Подробнее</button>
+                            <button class="btn btn-favorite" data-movie="Время">❤️<i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="movie-card">
+                    <img src="https://avatars.mds.yandex.net/i?id=c6d306a380ea2e6c3444de27e3cc522d_l-7011936-images-thumbs&n=13" alt="Постер фильма" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">Фуриоса: Хроники Безумного Макса</h3>
+                        <div class="movie-meta">
+                            <span class="movie-year">2024</span>
+                            <span class="movie-rating"><i class="fas fa-star"></i> 7.1</span>
+                        </div>
+                        <p class="movie-description">История похищения юной воительницы Фуриосы из Зелёных Земель, в результате которого девушка попадает в руки орды байкеров под предводительством Военачальника Дементуса.</p>
+                        <div class="movie-actions">
+                            <button class="btn btn-details" data-movie="Тёмный рыцарь">Подробнее</button>
+                            <button class="btn btn-favorite" data-movie="Тёмный рыцарь">❤️<i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="movie-card">
+                    <img src="https://en-images.kinorium.com/movie/1080/435687.jpg?1672418245" alt="Постер фильма" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">Дюна</h3>
+                        <div class="movie-meta">
+                            <span class="movie-year">2021</span>
+                            <span class="movie-rating"><i class="fas fa-star"></i> 8.8</span>
+                        </div>
+                        <p class="movie-description"> 2021 году фантастические картины показали себя гораздо успешнее, чем в 2023-м. И это отразилось в «Абсолютном топе» киноканала FAN. </p>
+                        <div class="movie-actions">
+                            <button class="btn btn-details" data-movie="Начало">Подробнее</button>
+                            <button class="btn btn-favorite" data-movie="Начало">❤️<i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!--модалка-->
+        
+    <div class="modal" id="movie-modal">
+        <div class="modal-content">
+            <span class="close-modal"></span>
+            <img src="" alt="Постер фильма" class="modal-poster" id="modal-poster">
+            <h2 class="modal-title" id="modal-title"></h2>
+            <div class="modal-meta">
+                <span class="modal-year" id="modal-year"></span>
+                <span class="modal-rating" id="modal-rating"></span>
+            </div>
+         <p class="modal-description" id="modal-description"></p>
+            <div class="modal-actions">
+                <button class="btn-modal btn-watch">Смотреть сейчас</button>
+                <button class="btn-modal btn-close-modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+        </main>
+        
+        <footer>
+            <p>Тут могла бы быть ваша реклама, но мне не заплатили :-C</p>
+        </footer>
+    </div>
+
+    <script src="/j.js"></script>
+
+</body>
+</html>
